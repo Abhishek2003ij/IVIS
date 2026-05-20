@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IVIS — Intelligent Analytics & AI Consulting</title>
+  <meta name="description" content="IVIS transforms raw data into intelligent digital vision. Analytics dashboards, AI systems, and modern data experiences for the future." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <!-- ─────────────── NAV ─────────────── -->
+  <nav>
+    <a href="#" class="nav-logo">IVIS</a>
+    <ul class="nav-links">
+      <li><a href="#dashboard">Dashboard</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#why">Vision</a></li>
+    </ul>
+  </nav>
+
+  <!-- ─────────────── HERO ─────────────── -->
+  <section id="hero">
+
+    <div class="hero-content">
+      <p class="hero-tag">Internet Vision Intelligence System</p>
+
+      <h1 class="hero-title">
+        <span class="ivis-word">IVIS</span>
+        Intelligent<br/>Analytics
+      </h1>
+
+      <p class="hero-subtitle">Transforming Data Into Intelligent Vision</p>
+
+      <p class="hero-body">
+        Building intelligent analytics systems, AI-driven insights,
+        and modern data experiences for the future.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#dashboard" class="btn btn-primary">Explore Vision</a>
+        <a href="#dashboard" class="btn btn-outline">View Dashboard</a>
+      </div>
+    </div>
+
+    <div class="hero-canvas-wrap">
+      <canvas id="heroCanvas"></canvas>
+
+      <!-- Floating sketch labels -->
+      <div class="float-label">Neural Flow</div>
+      <div class="float-label">Data Streams</div>
+      <div class="float-label">Signal Analysis</div>
+    </div>
+
+  </section>
+
+  <!-- ─────────────── DASHBOARD ─────────────── -->
+  <section id="dashboard">
+
+    <div class="dashboard-header">
+      <div>
+        <p class="section-tag reveal">02 — Live System</p>
+        <h2 class="section-title reveal reveal-delay-1">Analytics<br/><em>Interface</em></h2>
+      </div>
+      <p class="dashboard-intro reveal reveal-delay-2">
+        A living canvas of data — visualising flows, signals, and patterns
+        in real time. Every graph is a sketch of intelligence in motion.
+      </p>
+    </div>
+
+    <div class="dashboard-grid">
+
+      <!-- Ring 1: User Activity -->
+      <div class="widget widget-ring-1 reveal">
+        <div class="widget-label">User Activity</div>
+        <svg class="ring-chart" id="ring1"></svg>
+      </div>
+
+      <!-- Ring 2: System Flow -->
+      <div class="widget widget-ring-2 reveal reveal-delay-1">
+        <div class="widget-label">System Flow</div>
+        <svg class="ring-chart" id="ring2"></svg>
+      </div>
+
+      <!-- Bar chart: Trend Mapping -->
+      <div class="widget widget-bar reveal reveal-delay-2">
+        <div class="widget-label">Trend Mapping</div>
+        <div class="bar-chart-inner"></div>
+      </div>
+
+      <!-- Line chart: Data Streams -->
+      <div class="widget widget-line reveal reveal-delay-1">
+        <div class="widget-label">Data Streams</div>
+        <svg class="line-chart-svg" id="lineChart"></svg>
+      </div>
+
+      <!-- Signal Analysis -->
+      <div class="widget widget-signal reveal reveal-delay-2">
+        <div class="widget-label">Signal Analysis</div>
+        <div class="signal-dots">
+          <div class="signal-row">
+            <div class="signal-dot strong"></div>
+            <span>Input Layer</span>
+          </div>
+          <div class="signal-row">
+            <div class="signal-dot medium"></div>
+            <span>Processing</span>
+          </div>
+          <div class="signal-row">
+            <div class="signal-dot strong"></div>
+            <span>Feature Extract</span>
+          </div>
+          <div class="signal-row">
+            <div class="signal-dot weak"></div>
+            <span>Noise Filter</span>
+          </div>
+          <div class="signal-row">
+            <div class="signal-dot medium"></div>
+            <span>Output Node</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Insight Nodes -->
+      <div class="widget widget-nodes reveal">
+        <div class="widget-label">Insight Nodes</div>
+        <svg class="node-svg" id="nodeGraph"></svg>
+      </div>
+
+      <!-- Data Streams (stream bars) -->
+      <div class="widget widget-stream reveal reveal-delay-1">
+        <div class="widget-label">Data Streams</div>
+        <div class="stream-bars">
+          <div class="stream-bar-wrap">
+            <span class="stream-bar-label">Alpha</span>
+            <div class="stream-bar-track">
+              <div class="stream-bar-fill" data-width="78%" style="width:0%"></div>
+            </div>
+          </div>
+          <div class="stream-bar-wrap">
+            <span class="stream-bar-label">Beta</span>
+            <div class="stream-bar-track">
+              <div class="stream-bar-fill" data-width="54%" style="width:0%"></div>
+            </div>
+          </div>
+          <div class="stream-bar-wrap">
+            <span class="stream-bar-label">Gamma</span>
+            <div class="stream-bar-track">
+              <div class="stream-bar-fill" data-width="91%" style="width:0%"></div>
+            </div>
+          </div>
+          <div class="stream-bar-wrap">
+            <span class="stream-bar-label">Delta</span>
+            <div class="stream-bar-track">
+              <div class="stream-bar-fill" data-width="36%" style="width:0%"></div>
+            </div>
+          </div>
+          <div class="stream-bar-wrap">
+            <span class="stream-bar-label">Epsilon</span>
+            <div class="stream-bar-track">
+              <div class="stream-bar-fill" data-width="67%" style="width:0%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Predictive Signals (trend lines) -->
+      <div class="widget widget-trend reveal reveal-delay-2">
+        <div class="widget-label">Predictive Signals</div>
+        <svg id="trendChart"></svg>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ─────────────── ABOUT ─────────────── -->
+  <section id="about">
+
+    <div class="about-left reveal">
+      <svg class="about-sketch" id="aboutSketch"></svg>
+    </div>
+
+    <div class="about-right">
+      <p class="section-tag reveal">03 — About</p>
+      <h2 class="section-title reveal reveal-delay-1">About<br/><em>IVIS</em></h2>
+
+      <p class="reveal reveal-delay-2">
+        IVIS is a modern analytics and AI consulting initiative focused on
+        transforming raw information into meaningful digital intelligence.
+      </p>
+
+      <p class="reveal reveal-delay-3">
+        We combine analytics, visualization, backend engineering, and
+        AI-driven thinking to create systems that are
+        <em>insightful, scalable, and human-centered</em>.
+      </p>
+
+      <p class="reveal reveal-delay-4">
+        The goal is not just to display data —<br/>
+        <em>but to help people understand it.</em>
+      </p>
+    </div>
+
+  </section>
+
+  <!-- ─────────────── SERVICES ─────────────── -->
+  <section id="services">
+
+    <div class="services-header">
+      <p class="section-tag reveal">04 — Services</p>
+      <h2 class="section-title reveal reveal-delay-1">What IVIS<br/>Focuses On</h2>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card reveal">
+        <span class="service-num">01</span>
+        <h3 class="service-title">Analytics<br/>Dashboards</h3>
+        <p class="service-body">
+          Interactive visual systems designed for clarity and decision-making.
+          Data made legible, human, and actionable.
+        </p>
+      </div>
+
+      <div class="service-card reveal reveal-delay-1">
+        <span class="service-num">02</span>
+        <h3 class="service-title">AI & Predictive<br/>Systems</h3>
+        <p class="service-body">
+          Building intelligent solutions using machine learning and modern
+          AI workflows that evolve with your data.
+        </p>
+      </div>
+
+      <div class="service-card reveal reveal-delay-2">
+        <span class="service-num">03</span>
+        <h3 class="service-title">Data<br/>Visualization</h3>
+        <p class="service-body">
+          Transforming complex information into understandable visual
+          experiences. Design meets intelligence.
+        </p>
+      </div>
+
+      <div class="service-card reveal reveal-delay-1">
+        <span class="service-num">04</span>
+        <h3 class="service-title">Backend & Data<br/>Engineering</h3>
+        <p class="service-body">
+          Creating scalable systems for processing, organizing, and serving
+          data at any volume or velocity.
+        </p>
+      </div>
+
+      <div class="service-card reveal reveal-delay-2">
+        <span class="service-num">05</span>
+        <h3 class="service-title">Intelligent<br/>Automation</h3>
+        <p class="service-body">
+          Reducing repetitive workflows through smart automation solutions
+          that think, adapt, and improve.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ─────────────── WHY IVIS ─────────────── -->
+  <section id="why">
+
+    <p class="section-tag reveal">05 — Vision</p>
+    <h2 class="section-title reveal reveal-delay-1">Why<br/><em>IVIS</em></h2>
+
+    <div class="why-grid">
+
+      <div class="why-items">
+
+        <div class="why-item reveal">
+          <span class="why-item-num">01</span>
+          <p class="why-item-text">Built with a modern AI-first mindset — every decision informed by intelligence and data.</p>
+        </div>
+
+        <div class="why-item reveal reveal-delay-1">
+          <span class="why-item-num">02</span>
+          <p class="why-item-text">Focused on intelligent and meaningful design that respects the human behind the screen.</p>
+        </div>
+
+        <div class="why-item reveal reveal-delay-2">
+          <span class="why-item-num">03</span>
+          <p class="why-item-text">Combines rigorous engineering with visual thinking — systems that work beautifully.</p>
+        </div>
+
+        <div class="why-item reveal reveal-delay-3">
+          <span class="why-item-num">04</span>
+          <p class="why-item-text">Designed for future-ready analytics experiences that scale with ambition.</p>
+        </div>
+
+        <div class="why-item reveal reveal-delay-4">
+          <span class="why-item-num">05</span>
+          <p class="why-item-text">Minimal, scalable, and adaptable — built to last, built to grow.</p>
+        </div>
+
+      </div>
+
+      <div class="why-visual reveal">
+        <svg class="why-svg" viewBox="0 0 320 320"></svg>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ─────────────── FOOTER ─────────────── -->
+  <footer>
+
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <p class="footer-brand-name">IVIS</p>
+        <p class="footer-brand-sub">Internet Vision</p>
+        <p class="footer-body">
+          Designing intelligent systems for the next generation
+          of digital experiences.
+        </p>
+      </div>
+
+      <div class="footer-right">
+        <p class="mono" style="font-size:0.65rem; letter-spacing:0.1em; color:rgba(245,242,238,0.3); text-transform:uppercase;">
+          Analytics · AI · Visualization<br/>
+          Engineering · Automation
+        </p>
+      </div>
+
+    </div>
+
+    <hr class="footer-divider" />
+
+    <div class="footer-bottom">
+      <span>© 2025 IVIS — Internet Vision Intelligence System</span>
+      <span>Crafted with intention</span>
+    </div>
+
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
